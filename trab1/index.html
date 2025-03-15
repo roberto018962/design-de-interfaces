@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<header>
 
+    <h1>Design de Interfaces</h1>
+    <p>
+        O <i>design de interfaces</i> visa criar experiências intuitivas e agradáveis, priorizando a usabilidade e a estética 
+        para facilitar a interação entre usuários e sistemas. Uma boa interface deve ser clara, consistente e acessível, garantindo 
+        que usuários de diferentes perfis consigam navegar sem dificuldades. A escolha de <b>cores, tipografia e elementos visuais</b> 
+        deve refletir a identidade da marca, ao mesmo tempo que promove a funcionalidade. Prototipagem e testes com usuários 
+        são etapas essenciais para identificar problemas e melhorar a eficiência da interface antes do lançamento. Com a evolução
+         das tecnologias, o design de interfaces adapta-se a diferentes dispositivos, como smartphones, tablets e desktops, 
+         garantindo uma experiência responsiva e coesa.
+    </p>
+
+</header>
+<nav>
+    <ul>
+        <li>Menu</li> 
+        <li>Principal</li> 
+        <li>Produtos</li> 
+        <li>Serviços</li> 
+        <li>Sobre</li>
+    </ul>
+</nav>
+<main>
+    <ol>
+        <li>Frutas
+            <ul>
+                <li>Banana</li>
+                <li>Maçã</li>
+                <li>Abacate</li>
+            </ul>
+        </li>
+        
+        <li> Legumes
+            <ul>
+                <li>Cebola</li>
+                <li>Pimentão</li>
+            </ul>
+        </li>
+        <li> Cereais
+            <ul>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+        </li>
+    </ol>
+
+    <table>
+        <caption>Lucro por Mês</caption>
+        <thead>
+            <tr>
+                <th>Mês</th>
+                <th colspan="2">Frutas</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Banana</th>
+                <th>Maçã</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Janeiro</td>  
+                <td>100</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>120</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Março</td>
+                <td>120</td>
+                <td>150</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>340</td>
+                <td>300</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    
+        <a href="https://ifrs.edu.br" target="_blank">
+            <img src="img/ifrs.png" alt="Logo do IFRS" width="300">
+        </a>
+
+   
+    <figure>
+        <img src="img/banner-ps-2025.png" alt="Banner venha estudar" width="300">
+        <figcaption>
+            Esta é uma imagem com propaganda.
+        </figcaption>
+    </figure>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+
+            <br>
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+            
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="">Selecione um estado</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+
+            <br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" cols = "40" placeholder="Digite sua mensagem"></textarea>
+        </fieldset>
+
+        
+        <input type="submit" value="Enviar">
+    </form>
+</main>
+<footer></footer>
+    
+</body>
+</html>
