@@ -14,7 +14,7 @@ body {
 section {
     background: var(--background-color);
     min-height: 100vh;
-    position: stick;
+    position: static;
     color: var(--color);
 }
 
