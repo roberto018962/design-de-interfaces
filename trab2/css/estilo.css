@@ -121,6 +121,7 @@ nav a:hover {
     scrollbar-width: thin;
     scrollbar-color: #e50914 #333;
     box-sizing: border-box;
+    margin-top: 100px;
     /* Adicionado */
 }
 
