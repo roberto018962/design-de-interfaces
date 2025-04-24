@@ -18,6 +18,10 @@ section {
     scroll-margin-top: 120px;
 }
 
+p {
+
+    font-size: clamp (0.8rem, 2vw, 1rem);
+}
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -281,7 +285,7 @@ nav a:hover {
 
 .breve {
 
-    margin: 1em 1em 0em 0em;
+    margin: 2em;
     padding: 0.5em;
 
 }
