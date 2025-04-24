@@ -75,12 +75,12 @@ nav {
     background-color: var(--background-color);
     width: 100%;
     z-index: 999;
-    padding: clamp(0.5rem, 2vw, 0.8rem) clamp(1rem, 3vw, 1.5rem);
+    padding-left: 2em;
     overflow-x: auto;
     /* Permite rolagem se necessário */
     white-space: nowrap;
     /* Mantém itens na mesma linha */
-    height: 45px; 
+    height: 40px; 
 }
 
 nav ul {
