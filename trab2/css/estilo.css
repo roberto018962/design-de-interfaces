@@ -388,7 +388,7 @@ button[type="submit"]:hover {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: url('/imagens/dream_works.webp');
+    background-image: url('../imagens/dream_works.webp');
 }
 
 .cell-2 {
