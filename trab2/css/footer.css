@@ -13,7 +13,7 @@ footer {
 
 footer p {
     margin-bottom: clamp(0.5rem, 2vw, 1rem);
-    color: #777;
+    color: #ffffff;
     font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
