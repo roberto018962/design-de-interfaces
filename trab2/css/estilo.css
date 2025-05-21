@@ -396,7 +396,7 @@ button[type="submit"]:hover {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-image: url('trab2/imagens/lucas.webp');
+    background-image: url('../imagens/lucas.webp');
 }
 
 .cell-3 {
@@ -404,7 +404,7 @@ button[type="submit"]:hover {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: url('trab2/imagens/naom_66448005cac77.webp');
+    background-image: url('../imagens/naom_66448005cac77.webp');
 }
 
 .cell-4 {
@@ -412,7 +412,7 @@ button[type="submit"]:hover {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-    background-image: url('trab2/imagens/metro.webp');
+    background-image: url('../imagens/metro.webp');
 }
 
 .cell-5 {
@@ -420,7 +420,7 @@ button[type="submit"]:hover {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
-    background-image: url('trab2/imagens/x0ucnlbp46dd1.webp');
+    background-image: url('../imagens/x0ucnlbp46dd1.webp');
 }
 
 .cell-6 {
@@ -428,7 +428,7 @@ button[type="submit"]:hover {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-    background-image: url('trab2/imagens/a24-logo.webp');
+    background-image: url('../imagens/a24-logo.webp');
 }
 
 
