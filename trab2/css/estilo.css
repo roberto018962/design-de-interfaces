@@ -22,7 +22,10 @@ p {
 
     font-size: clamp (0.8rem, 2vw, 1rem);
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     color: var(--color);
@@ -53,6 +56,7 @@ header {
 
 
 }
+
 .logo {
     display: flex;
     color: var(--color);
@@ -62,9 +66,9 @@ header {
     text-decoration: none;
     background-color: #e50914;
     padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 3vw, 1.5rem);
-  
+
     width: 100%;
-    height: 80px; 
+    height: 80px;
 
 }
 
@@ -84,7 +88,7 @@ nav {
     /* Permite rolagem se necessário */
     white-space: nowrap;
     /* Mantém itens na mesma linha */
-    height: 40px; 
+    height: 40px;
 }
 
 nav ul {
@@ -119,10 +123,10 @@ nav a:hover {
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
-    scrollbar-color: #e50914 #333;
+    scrollbar-color: #e50914 #555;
     box-sizing: border-box;
     margin-top: 100px;
-    /* Adicionado */
+
 }
 
 /* Carrossel principal */
@@ -286,7 +290,158 @@ nav a:hover {
 
 .breve {
 
-    margin: 2em;
-    padding: 0.5em;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    max-width: 95em;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
 
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para telas maiores (acima de 768px) */
+
+@media (min-width: 768px) {
+    .form-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Estilos dos formulários */
+.form-grid {
+
+    padding: 1em;
+
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-bottom: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #555;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #e50914;
+}
+
+/* Estilos do Painel de Fotos */
+.painel {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    width: 80%;
+    border: 2px #ffffff solid;
+    padding: 12px;
+    border-radius: 6px;
+    min-height: 200px;
+
+}
+
+.photo-cell {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(241, 241, 241, 0.1);
+}
+
+/* Layout das células */
+.cell-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url('/streamvista/imagens/dream_works.webp');
+}
+
+.cell-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url('/streamvista/imagens/lucas.webp');
+}
+
+.cell-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url('/streamvista/imagens/naom_66448005cac77.webp');
+}
+
+.cell-4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url('/streamvista/imagens/metro.webp');
+}
+
+.cell-5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url('/streamvista/imagens/x0ucnlbp46dd1.webp');
+}
+
+.cell-6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url('/streamvista/imagens/a24-logo.webp');
+}
+
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .photo-cell {
+        aspect-ratio: 4/3;
+        grid-column: 1 !important;
+        grid-row: auto !important;
+    }
 }
