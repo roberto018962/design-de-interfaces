@@ -222,6 +222,37 @@ nav a:hover {
     animation-range: entry 20% 50vh;
 }
 
+/* Estilos para a seção de customização */
+#customizacao {
+    padding: 2rem 1rem;
+}
+
+.preview-container {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.preview-container h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+#live-preview-header, #live-preview-footer {
+    padding: 1rem;
+    border: 1px dashed #ccc;
+    margin-bottom: 1rem;
+}
+
+.preview-content {
+    padding: 1rem;
+    border: 1px dashed #ccc;
+    margin-bottom: 1rem;
+}
+
 .categoria-box {
     min-width: 320px;
     width: 22vh;
