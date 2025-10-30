@@ -216,42 +216,6 @@
 
                 </div>
             </section>
-            <section id="customizacao">
-                <h2>Crie seu Próprio Código HTML</h2>
-                <div class="form-container">
-                    <div class="form-grid">
-                        <fieldset>
-                            <legend>Personalize o Cabeçalho e Rodapé</legend>
-                            <div class="form-group">
-                                <label for="header-input">Código do Cabeçalho:</label>
-                                <textarea id="header-input" name="header-input" rows="5" placeholder="Digite o código HTML para o cabeçalho aqui..."></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="footer-input">Código do Rodapé:</label>
-                                <textarea id="footer-input" name="footer-input" rows="5" placeholder="Digite o código HTML para o rodapé aqui..."></textarea>
-                            </div>
-                            <button id="generate-code" type="button">Gerar Código</button>
-                        </fieldset>
-                    </div>
-                    <div class="preview-container">
-                        <h3>Visualização em Tempo Real</h3>
-                        <div id="live-preview-header"></div>
-                        <div class="preview-content">
-                            <p>O conteúdo da sua página ficaria aqui.</p>
-                        </div>
-                        <div id="live-preview-footer"></div>
-                    </div>
-                </div>
-                <div class="form-grid">
-                    <fieldset>
-                        <legend>Código Gerado</legend>
-                        <div class="form-group">
-                            <label for="generated-code">Código HTML Completo:</label>
-                            <textarea id="generated-code" name="generated-code" rows="10" readonly></textarea>
-                        </div>
-                    </fieldset>
-                </div>
-            </section>
             <section id="cadastro">
            <h2>Cadastro</h2>
                 <div class="form-container">
@@ -465,58 +429,5 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const headerInput = document.getElementById('header-input');
-                const footerInput = document.getElementById('footer-input');
-                const livePreviewHeader = document.getElementById('live-preview-header');
-                const livePreviewFooter = document.getElementById('live-preview-footer');
-                const generateCodeBtn = document.getElementById('generate-code');
-                const generatedCodeTextarea = document.getElementById('generated-code');
-
-                headerInput.addEventListener('input', () => {
-                    livePreviewHeader.innerHTML = headerInput.value;
-                });
-
-                footerInput.addEventListener('input', () => {
-                    livePreviewFooter.innerHTML = footerInput.value;
-                });
-
-                generateCodeBtn.addEventListener('click', () => {
-                    const headerHTML = headerInput.value;
-                    const footerHTML = footerInput.value;
-                    const mainContentHTML = `
-        <main>
-            <p>O conteúdo da sua página ficaria aqui.</p>
-        </main>
-                    `;
-
-                    const fullHTML = `<!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sua Página Personalizada</title>
-        <style>
-            /* Adicione aqui seus estilos ou link para um arquivo CSS */
-            body { font-family: sans-serif; }
-            header, footer { padding: 20px; background-color: #f0f0f0; }
-        </style>
-    </head>
-    <body>
-        <header>
-    ${headerHTML}
-        </header>
-    ${mainContentHTML}
-        <footer>
-    ${footerHTML}
-        </footer>
-    </body>
-    </html>`;
-
-                    generatedCodeTextarea.value = fullHTML.trim();
-                });
-            });
-        </script>
     </body>
 </html>
